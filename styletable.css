@@ -1,0 +1,19 @@
+.header {
+    padding: 60px;
+    text-align: center;
+    background: lightgrey;
+    color: white;
+    font-size: 30px;
+    background-image: url('https://www.rakennuslehti.fi/wp-content/uploads/2018/11/000ay868-2560x1440.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  table, th, td {
+    border: 1px solid black;
+}
+.row {
+    margin-top: 2%;
+}
+input {
+   
+}
