@@ -124,16 +124,20 @@
         <div class="row">
             <div class="col-md-8">
                 <form action="/https://www.w3schools.com/action_page.php">
-                    <label for="fname">Etunimi:</label>
-                    <input type="text" id="fname" name="fname" required value=""><br>
-                    <label for="lname">Sukunimi:</label>
-                    <input type="text" id="lname" name="lname" required value=""><br>
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" name="email" required value=""><br>
-                    Lisätietoja : <br />
-                    <textarea rows="4" cols="80" name="description"></textarea><br>
-                    <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
-                    <label for="newsletter">Sign up for newsletter</label><br>
+                    <fieldset>
+                        <legend>Henkilötiedot</legend>
+                        <label for="fname">Etunimi:</label>
+                        <input type="text" id="fname" name="fname" required value=""><br>
+                        <label for="lname">Sukunimi:</label>
+                        <input type="text" id="lname" name="lname" required value=""><br>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" required value=""><br>                        
+                    </fieldset>
+                    <legend>Lisätietoja:</legend>
+                    <textarea rows="4" cols="50" name="description"></textarea><br>
+                    <legend>Klikkaa saadaksesi sähköpostiin uusimmat tiedot</legend>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    <label for="newsletter">Ilmoittaudu uutiskirjeeseen</label><br>
                     <label for="kauppakeskukset">Valitse kauppakeskus:</label>
                     <select name="kauppakeskukset" id="kauppakeskukset">
                         <option value="kaari">Kaari</option>
