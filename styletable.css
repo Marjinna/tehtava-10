@@ -1,3 +1,6 @@
+body {
+  background: lightskyblue;
+}
 .header {
     padding: 60px;
     text-align: center;
@@ -8,13 +11,46 @@
     background-size: cover;
     background-position: center;
   }
-  table, th, td {
+  table, th, td ,tr{
     border: 1px solid black;
+    background: lightgrey;
+    font-size: 17px;
+    width: 100%;
+    padding: 20px;
+    text-align: left; 
+    vertical-align: middle;
+  }
+  table.bodywrapcenter>tr>td>th {
+    width: 100%;
+    float: left;
 }
 .row {
-    margin-top: 2%;
+    margin: 2%;
+    padding: 2%;
 }
 form {
    border: 1px solid black;
 padding: 20px;
+background-color: lightgrey;
+}
+input[type=submit] {
+  width: 50%;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+input[type=text], select , area, textarea{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-size: 14px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
 }

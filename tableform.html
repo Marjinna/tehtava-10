@@ -65,9 +65,9 @@
     <div class="container">
         <!-- container alku, toinen rivi aloitus-->
         <div class="row">
-            <div class="col-md-6">
-                <table>
-                    <caption style="text-align:center">Kauppakeskus Data</caption>
+            <div class="col-8">
+                <table class="table table-striped">
+                    <caption style="text-align:center; caption-side: top;">Kauppakeskus Data</caption>
                     <tr>
                         <th>Kauppakeskus</th>
                         <th>Paikkakunta</th>
@@ -104,15 +104,18 @@
                         <td>10,0</td>
                     </tr>
                     <tr>
-                        <th colspan="3">Suomen Kauppakeskuksista 32% sijaitsee pääkaupunkiseudulla</th>
+                        <th colspan="3">Suomen Kauppakeskuksista 32% sijaitsee pääkaupunkiseudulla.</th>
                     </tr>
                     <tr>
-                        <td rowspan="2">Niiden myynti on 49% Suomen kauppakeskusmarkkinan myynnistä</td>
-                        <td colspan="2">Kauppakeskus asioinneista 96,4% tehdään kaupunkikeskustoissa</td>
+                        <td colspan="3">Kauppakeskus asioinneista 96,4% tehdään kaupunkikeskustoissa.<br>
+                            Niiden myynti on 49% Suomen kauppakeskusmarkkinan myynnistä.
+                        </td>
+
                     </tr>
+
                 </table>
             </div>
-            <div class="col-md-6"><img src="kaari.jpg" class="img-thumbnail" alt="Kauppakeskus Kaari">
+            <div class="col-md-4"><img src="kaari.jpg" class="img-thumbnail" alt="Kauppakeskus Kaari">
             </div>
         </div>
     </div>
@@ -131,11 +134,15 @@
                         <label for="lname">Sukunimi:</label>
                         <input type="text" id="lname" name="lname" required value=""><br>
                         <label for="email">Email:</label>
-                        <input type="text" id="email" name="email" required value=""><br>                        
+                        <input type="text" id="email" name="email" required value=""><br>
                     </fieldset>
-                    <legend>Lisätietoja:</legend>
-                    <textarea rows="4" cols="50" name="description"></textarea><br>
-                    <legend>Klikkaa saadaksesi sähköpostiin uusimmat tiedot</legend>
+                    <fieldset>
+                        <legend>Lisätietoja:</legend>
+                        <textarea rows="4" cols="80" name="description"></textarea><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Klikkaa saadaksesi sähköpostiin uusimmat tiedot</legend>
+                    </fieldset>
                     <input type="checkbox" id="newsletter" name="newsletter" value="yes">
                     <label for="newsletter">Ilmoittaudu uutiskirjeeseen</label><br>
                     <label for="kauppakeskukset">Valitse kauppakeskus:</label>
@@ -146,6 +153,7 @@
                         <option value="tripla">Tripla</option>
                     </select><br>
                     <input type="submit" value="Rekisteröidy">
+
                 </form>
             </div>
 
@@ -162,8 +170,16 @@
             <div class="col">
                 <div class="jumbotron" style="text-align: center;margin-top: 10%;">
                     <h2 class="display-5">Tableform testausta</h2>
-                    <p class="lead">Harjoittelen tekemään formeja ja tableja
-                    </p>
+                    <p class="lead">Harjoittelen tekemään formeja ja tableja</p>
+                    <table>
+                        <tr>
+                            <td rowspan="2">Kauppakeskus Kaari</td>
+                            <td>00420</td>
+                        </tr>
+                        <tr>
+                            <td>Helsinki</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
